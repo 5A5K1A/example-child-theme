@@ -1,0 +1,54 @@
+$underline: (
+
+);
+
+h1, h2, h3, h4, h5, h6,
+.h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
+  display: inline;
+  font-family: $sans-serif-bold-font;
+  line-height: 1.2;
+  color: currentColor;
+  word-break: break-word;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+h1, .h1-like {
+  @include adjust($header-l);
+
+  box-shadow: 0 2.6rem 0 0 $brown inset,0 3.2rem 0 0 $light-blue inset;
+  @include breakpoint($adjust-sm) { box-shadow: 0 2.9rem 0 0 $brown inset, 0 3.6rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-md) { box-shadow: 0 3.2rem 0 0 $brown inset, 0 3.8rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-lg) { box-shadow: 0 -.7rem 0 0 $brown inset, 0 -1.4rem 0 0 $light-blue inset }
+}
+h2, .h2-like {
+  @include adjust($header-m);
+
+  box-shadow: 0 1.2rem 0 0 $brown inset, 0 1.6rem 0 0 $light-blue inset;
+  @include breakpoint($adjust-sm) { box-shadow: 0 1.4rem 0 0 $brown inset, 0 2rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-md) { box-shadow: 0 2.1rem 0 0 $brown inset, 0 2.6rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-lg) { box-shadow: 0 -0.5rem 0 0 $brown inset, 0 -1.3rem 0 0 $light-blue inset; }
+}
+h3, h4, .h3-like, .h4-like {
+  @include adjust($header-s);
+
+  box-shadow: 0 1.2rem 0 0 $brown inset, 0 1.6rem 0 0 $light-blue inset;
+  @include breakpoint($adjust-sm) { box-shadow: 0 1.4rem 0 0 $brown inset, 0 2rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-md) { box-shadow: 0 2.1rem 0 0 $brown inset, 0 2.6rem 0 0 $light-blue inset; }
+  @include breakpoint($adjust-lg) { box-shadow: 0 -0.5rem 0 0 $brown inset, 0 -1.3rem 0 0 $light-blue inset; }
+}
+
+// Make an underlined title centered
+.centered-title {
+  display: block;
+  text-align: center;
+}
+
+// Make the header-color white
+.white {
+  color: white;
+}

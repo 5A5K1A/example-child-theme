@@ -1,0 +1,89 @@
+.faq {
+  background-color: $white;
+  position: relative;
+
+  &--button {
+    width: 100%;
+    background-color: $white;
+    border: 0px solid $white;
+    border-radius: 0;
+
+    text-align: left;
+    @include adjust($menu-font-size);
+    font-family: $sans-serif-bold-font;
+
+    padding: 1.25rem 1.25rem 1.25rem 1.6rem;
+    color: $dark-blue;
+
+    transition: .3s color;
+
+    &:after {
+      content: "";
+      width: 1.7rem; height: 1.7rem;
+      display: inline-block;
+      background-image: url("../img/icons/blue/arrow-right.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      float: right;
+
+      transition: .2s transform;
+    }
+
+    @include hocus {
+      outline: none;
+      color: rgba($dark-blue, .6);
+
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &--collaps {
+    overflow: hidden;
+    padding: 0 1.25rem 1.25rem 1.6rem;
+
+    color: $green;
+    line-height: 1.6;
+
+    p {
+      margin-top: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.closed {
+  .faq--collaps {
+    color: $dark-blue;
+
+    max-height: 0px;
+    padding: 0;
+
+    transition: .5s max-height ease-out;
+  }
+  p {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+.collapsed {
+  .faq {
+    &--collaps {
+      color: $dark-blue;
+      max-height: 60rem;
+      transition: .5s max-height ease-in;
+    }
+    &--button {
+
+      color: $green;
+
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

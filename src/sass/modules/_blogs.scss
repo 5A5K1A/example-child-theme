@@ -1,0 +1,13 @@
+.blogs {
+  @include container;
+
+  &--grid {
+    @include grid(".blog-item");
+
+    // enhancement for eaqle height
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,19 @@
+.blog {
+
+  &--container {
+    @include container;
+    color: $dark-blue;
+
+    p, img, h1, h2, h3, h4, h5, h6, strong, table, figure {
+      max-width: $blog-content-width;
+    }
+    img {
+      width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong {
+      font-family: $sans-serif-bold-font;
+      font-size: 1.225rem;
+    }
+  }
+}

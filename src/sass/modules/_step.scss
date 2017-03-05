@@ -1,0 +1,92 @@
+.step {
+  margin: 0 1rem;
+  padding: 1rem 0 0 0;
+
+  color: $dark-blue;
+
+  @include breakpoint($bp-icon-left) {
+    position: relative;
+    padding: 3.5rem 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0%; left: 3.375rem;
+      width: .375rem; height: 100%;
+      display: block;
+
+      background-color: #57AB27;
+    }
+
+    &:first-of-type::before {
+      height: 50%;
+      top: auto; bottom: 0%;
+    }
+    &:last-of-type::before {
+      height: 50%;
+      bottom: 50%;
+    }
+  }
+
+  &--icon {
+    width: 7.5rem; height: 7.5rem;
+    display: block;
+    margin: 1rem auto .3rem auto;
+
+    border-radius: 50%;
+
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5rem;
+
+    @include breakpoint($bp-icon-left) {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+  &--text {
+    position: relative;
+    display: block;
+    max-width: 23.75rem;
+    padding: 1.875rem 1.6875rem 1.625rem 2.0625rem;
+    margin: 0 auto;
+
+    background: $gray;
+
+    @include breakpoint($bp-icon-left) {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 0 3.25rem;
+    }
+
+    @include breakpoint($bp-icon-left) {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -2.5rem; top: 50%;
+        width: 2.5rem; height: 2.5rem;
+        display: inline-block;
+
+        transform: translateY(-50%);
+
+        background-image: url("../img/icons/steps-arrow.png");
+        background-image: url("../img/icons/steps-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &--title {
+    font-family: $sans-serif-bold-font;
+    @include reset-title-style;
+    @include adjust($profile-disc-font-size);
+    margin: 0;
+  }
+  &--explenation {
+
+  }
+}

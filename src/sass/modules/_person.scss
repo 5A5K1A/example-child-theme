@@ -1,0 +1,64 @@
+.person {
+  &--container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+
+    // align img on the bottom
+    @include breakpoint($persons-align) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+  &--img {
+
+  }
+  &--figcaption {
+    position: absolute;
+    top: calc(100% - 6rem);
+    width: 100%;
+
+    padding: 1.375rem 1.5rem;
+
+    background: rgba($light-blue, .9);
+
+    @include breakpoint($persons-align) {
+      top: 100%;
+      transform: translateY(-6rem);
+
+      transition: .3s transform;
+    }
+    @include breakpoint($adjust-lg) {
+      top: 100%;
+      transform: translateY(-6.8rem);
+    }
+  }
+  &--title {
+    margin: 0;
+
+    font-family: $sans-serif-bold-font;
+    @include adjust($menu-font-size);
+  }
+  &--text {
+    display: none;
+    opacity: 0;
+    transition: .8s opacity;
+
+    @include breakpoint($persons-align) {
+      display: block;
+    }
+  }
+
+  @include hocus {
+    .person {
+      &--text {
+        opacity: 1;
+      }
+      &--figcaption {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}

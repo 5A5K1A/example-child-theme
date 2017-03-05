@@ -1,0 +1,10 @@
+.steps {
+  @include container;
+
+  &--list {
+    padding: 0;
+  }
+  &--item {
+
+  }
+}

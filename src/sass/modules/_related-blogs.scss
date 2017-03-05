@@ -1,0 +1,9 @@
+.related-blogs {
+  background-color: $brown;
+  padding: 2rem 0 3.75rem 0;
+  margin-top: 2.9375rem;
+
+  &--title {
+    @include container;
+  }
+}

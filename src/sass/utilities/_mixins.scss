@@ -1,0 +1,168 @@
+// mixin for centering horizontally
+@mixin center-element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+  .box {
+    @include center-element;
+  }
+
+*/
+
+// mixin for centering vertically - ie10
+@mixin vertically-centred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.box {
+  @include vertically-centred;
+}
+*/
+
+
+// mixin for positioning
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+	position: $type;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+/*
+.box {
+  @include position(absolute, 10px, 10px, 10px, 10px);
+}
+*/
+
+// mixin for size
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+/*
+    .box {
+        @include size(300px, 600px);
+    }
+*/
+
+
+// resets the custom underline of the title
+@mixin reset-title-style {
+  box-shadow: none !important;
+  display: block !important;
+}
+
+
+
+@mixin outline {
+  * {
+    outline: 1px solid lime;
+  }
+}
+
+
+
+// Used Mixins
+
+@mixin reset-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+// mixin for automatically including focus styles with hover
+@mixin hocus {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+// Force people to use min-width in breakpoint
+@mixin breakpoint($width) {
+  @media(min-width: $width) {
+    @content;
+  }
+}
+
+//  Cross-resolution style setting
+@mixin adjust($map, $property: "font-size") {
+  @each $item, $i in $map {
+    & {
+      @if( $item == "xs") {
+        #{$property}: $i;
+      }
+      @if( $item == "sm") {
+        @include breakpoint($adjust-sm) {
+          #{$property}: $i;
+        }
+      }
+      @if( $item == "md") {
+        @include breakpoint($adjust-md) {
+          #{$property}: $i;
+        }
+      }
+      @if( $item == "lg") {
+        @include breakpoint($adjust-lg) {
+          #{$property}: $i;
+        }
+      }
+    }
+  }
+}
+
+@mixin tableBorder {
+  border-bottom: 2px solid $gray;
+}
+
+// Add a container to the page which takes care of your paddings on mobile sizes
+@mixin container($include-padding: "true") {
+  max-width: $container;
+  margin: 0 auto;
+
+  // TODO: add an alway's no padding option?
+
+  @if ($include-padding == "true") {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    box-sizing: border-box;
+
+    @include breakpoint($bp-container) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin grid($class, $bp-half: 600px, $bp-third: 900px) {
+  margin: 0 -#{$gutter};
+
+  #{$class} {
+    width: calc(100% - #{$double-gutter});
+    display: inline-block;
+    margin: 1rem $gutter;
+
+    vertical-align: top;
+
+    @include breakpoint($bp-half) {
+      width: calc(49% - #{$double-gutter});
+    }
+    @include breakpoint($bp-third) {
+      width: calc(33% - #{$double-gutter});
+    }
+  }
+}
+
+@mixin no-ani-on-firefox {
+  @-moz-document url-prefix() {
+    animation: none;
+  }
+}

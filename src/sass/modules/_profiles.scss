@@ -1,0 +1,16 @@
+.profiles {
+  @include container;
+  width: 100%;
+
+  &--lsit {
+
+  }
+  &--item {
+    background: $white;
+    color: $dark-blue;
+    margin-bottom: 2rem;
+  }
+  &--footnote {
+  	text-align: end;
+  }
+}

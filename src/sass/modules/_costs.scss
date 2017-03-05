@@ -1,0 +1,38 @@
+.costs {
+  max-width: 40rem;
+  width: 100%;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 4.1875rem;
+
+  background-color: $light-brown;
+  color: $dark-blue;
+
+  @include adjust($graph-title-font-size);
+
+  &--title {
+    margin: 0;
+  }
+
+  &--percentage,
+  &--cost {
+    display: inline-block;
+    margin-top: .4rem;
+
+    @include adjust($header-m);
+  }
+  &--percentage {
+    margin-right: 4.3125rem;
+
+    @include breakpoint(380px) {
+      margin-right: 9.3125rem;
+    }
+  }
+  &--cost {
+
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

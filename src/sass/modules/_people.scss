@@ -1,0 +1,86 @@
+.people {
+  position: relative;
+  max-width: 70rem;
+  margin: 0 auto;
+
+  &.articles--section {
+    padding-bottom: 1rem;
+  }
+  &--container {
+    max-width: 15rem;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+
+    @include breakpoint(470px) {
+      max-width: 21rem;
+    }
+    @include breakpoint(960px) {
+      max-width: 42rem;
+    }
+    @include breakpoint(1200px) {
+      max-width: 62.5rem;
+    }
+  }
+  &--list {
+    overflow: auto;
+    margin: 0; padding: 0;
+  }
+  &--title {
+    margin: 0;
+  }
+  &--item {
+    max-width: 15rem;
+    float: left;
+    margin: 1rem 0;
+    padding: 0 1rem;
+
+    @include breakpoint(470px) {
+      max-width: 20.75rem;
+    }
+
+    @include breakpoint($persons-align) {
+      display: inline-block;
+      width: 32.9%; height: 25rem;
+    }
+  }
+
+
+
+  &--item-js {
+    float: left;
+  }
+  &--button {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 1.5625rem; height: 2.5rem;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    border: 0px;
+
+    &:disabled {
+      opacity: .3;
+
+      @include hocus {
+        cursor: auto;
+      }
+    }
+    @include hocus {
+      cursor: pointer;
+      outline: none;
+    };
+  }
+  &--button-right {
+    right: 1rem;
+    background-image: url("../img/icons/arrow-right.png");
+    background-image: url("../img/icons/arrow-right.svg");
+  }
+  &--button-left {
+    left: 1rem;
+    background-image: url("../img/icons/arrow-left.png");
+    background-image: url("../img/icons/arrow-left.svg");
+  }
+}

@@ -1,0 +1,74 @@
+.has-img {
+
+  &--right {
+    .section {
+      &--text {
+        @include breakpoint($horizontal-align) {
+          margin: auto 2rem;
+          max-width: 35.625rem;
+          order: 1;
+        }
+      }
+      &--img {
+        max-width: 28.125rem; // 450px
+        width: 100%;
+
+        @include breakpoint($horizontal-align) {
+          order: 2;
+        }
+
+        @include breakpoint($large-bp-container) {
+          margin-right: -.7rem;
+
+          img {
+            max-width: 120%;
+            width: 120%;
+          }
+        }
+      }
+    }
+  }
+  &--left {
+    .section {
+      &--text {
+        @include breakpoint($horizontal-align) {
+          margin: auto 2rem;
+          order: 2;
+        }
+      }
+      &--img {
+        max-width: 28.125rem; // 450px
+        width: 100%;
+
+        @include breakpoint($horizontal-align) {
+          max-width: auto;
+          order: 1;
+        }
+      }
+    }
+  }
+
+  &--l {
+    img {
+      @include breakpoint($large-bp-container) {
+        max-width: 87.5rem;
+        margin-left: -3.5rem;
+      }
+    }
+  }
+
+  // &--left {
+  //   .section {
+  //     &--text {
+  //       @include breakpoint($horizontal-align) {
+  //         order: 2;
+  //       }
+  //     }
+  //     &--img {
+  //       @include breakpoint($horizontal-align) {
+  //         order: 1;
+  //       }
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,126 @@
+.svg {
+
+  &-mail--path,
+  &-location--group {
+    fill: $white;
+    fill-rule: evenodd;
+    transition: .2s fill;
+  }
+
+  &-tel--path {
+    stroke-width: 2;
+    stroke: $white;
+    fill: none;
+    transition: .2s stroke;
+  }
+
+
+  // Product flexblock svg's
+  &--beheer {
+    path {
+      &:nth-of-type(1) {
+        fill: #FDD633;
+      }
+      &:nth-of-type(2) {
+        fill: #F2AB0C;
+      }
+      &:nth-of-type(3) {
+        fill: #F4940B;
+      }
+    }
+  }
+
+  &--advies {
+
+    &-darkbrown {
+      fill: #7E4E24;
+    }
+    &-lightbrown {
+      fill: #B17F49;
+    }
+  }
+
+  // USP Slider arrows
+  &--arrow-left {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+
+  &--arrow-left,
+  &--arrow-right {
+    .arrow {
+      fill: #80DEEA;
+      transition: .2s fill;
+    }
+  }
+
+  // USP icons
+  &--robot {
+    bottom: 0;
+    right: 0;
+  }
+  &--vis {
+    right: 0;
+    top: 45%;
+
+    @include breakpoint($bp-container) {
+      right: -30px;
+    }
+  }
+  &--plant {
+    right: 0;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+  &--critical {
+    right: 0;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+  &--pig {
+    right: 0;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+  &--piglets {
+    bottom: 37%;
+    right: 35%;
+  }
+  &--customars {
+    width: 18rem;
+    right: -5%;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+
+
+
+
+  @include hocus {
+    .svg {
+      &-mail--path,
+      &-location--group {
+        @include hocus { fill: $text-color; }
+      }
+      &-tel--path {
+        @include hocus { stroke: $text-color; }
+      }
+    }
+  }
+}
+
+.location {
+  @include hocus {
+    .svg-location--group { fill: $dark-blue; }
+  }
+}
+.mail {
+  @include hocus {
+    .svg-mail--path { fill: $dark-blue; }
+  }
+}
+.phone {
+  @include hocus {
+    .svg-tel--path { stroke: $dark-blue; }
+  }
+}

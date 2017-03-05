@@ -1,0 +1,31 @@
+.has-button {
+  @include breakpoint($horizontal-align) {
+    position: relative;
+  }
+
+  .section {
+    &--text {
+      @include breakpoint($horizontal-align) {
+        margin-bottom: 5rem !important;
+      }
+    }
+  }
+
+  &.has-img--left,
+  &.has-img--right {
+    .section {
+
+      &--button {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint($horizontal-align) {
+          position: absolute;
+          bottom: 0;
+
+          margin-top: 0rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+}

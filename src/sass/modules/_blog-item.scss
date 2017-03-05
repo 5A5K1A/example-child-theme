@@ -1,0 +1,61 @@
+.blog-item {
+  background: $white;
+  padding: 1.125rem 1.25rem;
+
+  &--link {
+    @include reset-link;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+
+    @include hocus {
+
+      .blog-item {
+        &--title {
+          text-decoration: underline;
+        }
+        &--img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &--title {
+    @include reset-title-style;
+    color: $dark-blue;
+    font-family: $sans-serif-bold-font;
+    @include adjust($menu-font-size);
+  }
+  &--img {
+    width: 100%;
+
+    transition: .3s transform;
+
+    &-container {
+      max-height: 15rem;
+      overflow: hidden;
+      margin: -1.125rem -1.25rem 0 -1.25rem;
+    }
+  }
+
+  &--meta {
+    margin: 0;
+    color: $green;
+    line-height: 1;
+
+    margin-top: auto;
+  }
+  &--author {
+
+  }
+  &--seperation {
+
+  }
+  &--date {
+    display: inline-block;
+  }
+}

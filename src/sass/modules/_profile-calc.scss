@@ -1,0 +1,70 @@
+$bp-align-labels: 36rem;
+
+$label-width: (
+  xs: 6.3rem,
+  sm: 6.6rem,
+  md: 7rem,
+  lg: 7.35rem
+);
+
+.profile-calc {
+
+  &--title {
+    margin-bottom: 0;
+  }
+  &--radio {
+    // hide radio buttons while keeping the label clickable
+    position: absolute;
+    visibility: hidden;
+
+    &:checked + label {
+      text-decoration: underline;
+    }
+  }
+  &--label {
+    @include adjust($label-width, width);
+    display: inline-block;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: $bold-slab-font;
+    @include adjust($logo-font-size);
+
+    @include breakpoint($bp-align-labels) {
+      float: left;
+    }
+
+    @include hocus {
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      .profile-calc--wrapper {
+        border-right: 2px solid $white;
+      }
+    }
+  }
+
+  &--wrapper {
+    display: block;
+    border: 2px solid $white;
+    padding: .6rem 0;
+
+    @include breakpoint($bp-align-labels) {
+      border-right: 0px solid $white;
+    }
+  }
+  &--explain {
+    display: block;
+
+    font-size: 1rem;
+  }
+}
+
+.js-enabled {
+  .profile-calc--radio:checked {
+    & + label {
+      text-decoration: none;
+      color: $dark-blue;
+    }
+  }
+}

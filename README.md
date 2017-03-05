@@ -1,0 +1,1 @@
+Deze repo betreft een gestripte versie van een voor Occhio gebruikt Child Theme.

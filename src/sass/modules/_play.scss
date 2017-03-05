@@ -1,0 +1,40 @@
+.play {
+  display: block;
+  margin-top: 2.5625rem;
+
+  color: $white;
+  background: none;
+  border: none;
+
+  @include hocus {
+    outline: none;
+    cursor: pointer;
+
+    .play--icon {
+      background-position: 70% 50%;
+    }
+  }
+
+  &--icon {
+    width: 3.75rem; height: 3.75rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+
+    border: 2px solid $white;
+    border-radius: 50%;
+
+    background-image: url("../img/icons/white/play-icon.png");
+    background-image: url("../img/icons/white/play-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-size: 1.1rem;
+
+    transition: .3s background-position;
+  }
+  &--text {
+    font-size: 1rem;
+    line-height: 1;
+    vertical-align: middle;
+  }
+}

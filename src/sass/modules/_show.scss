@@ -1,0 +1,352 @@
+
+// Here are all the SVG animations for the USP slider
+
+// Slide 1 - The Sign
+@keyframes sign {
+  0%, 15% {
+    transform: translateY(100%) rotate(15deg);
+  }
+  35%,
+  45% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10%) rotate(-15deg);
+  }
+  60% {
+    transform: translateY(10%) rotate(15deg);
+  }
+  70% {
+    transform: translateY(10%) rotate(-15deg);
+  }
+  80% {
+    transform: translateY(10%) rotate(15deg);
+  }
+  85% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes signStripe {
+  0%, 90% {
+    width: 0;
+  }
+  100% {
+    width: 8rem;
+  }
+}
+
+.show {
+
+  .svg--robot {
+    animation: sign 2s linear forwards;
+    transform-origin: 50% 100%;
+    @include no-ani-on-firefox;
+
+    #stripe {
+      animation: signStripe 2s linear forwards;
+      @include no-ani-on-firefox;
+    }
+  }
+}
+
+// Slide 2 - Bubbles
+@keyframes float-right {
+  0% { transform: translate(0rem, 0rem) rotateY(180deg); }
+  10% { transform: translate(-.1rem, 0rem) rotateY(180deg); }
+  20% { transform: translate(-.3rem, .1rem) rotateY(180deg); }
+  30% { transform: translate(-.4rem, 0rem) rotateY(180deg); }
+  40% { transform: translate(0rem, .1rem) rotateY(180deg); }
+  50% { transform: translate(0rem, 0rem) rotateY(180deg); }
+  60% { transform: translate(.1rem, .1rem) rotateY(180deg); }
+  70% { transform: translate(.2rem, 0rem) rotateY(180deg); }
+  80% { transform: translate(.3rem, .1rem) rotateY(180deg); }
+  80% { transform: translate(.2rem, .1rem) rotateY(180deg); }
+  90% { transform: translate(.1rem, 0rem) rotateY(180deg); }
+  100% { transform: translate(0rem, 0rem) rotateY(180deg); }
+}
+
+@keyframes blub-one {
+  0% { opacity: 0; transform: translate(.3rem, 1rem); }
+  7% { transform: translate(.2rem, .8rem); }
+  14% { transform: translate(.1rem, .6rem); }
+  21% { transform: translate(0rem, .4rem); }
+  28% { transform: translate(0rem, .2rem); }
+  33%, 100% { transform: translate(0rem, 0rem); opacity: 1; }
+}
+@keyframes blub-two {
+  0%, 21% { opacity: 0; transform: translate(.3rem, 1rem); }
+  27% { transform: translate(.2rem, .8rem); }
+  35% { transform: translate(.1rem, .6rem); }
+  42% { transform: translate(0rem, .4rem); }
+  49% { transform: translate(0rem, .2rem); }
+  56%, 100% { transform: translate(0rem, 0rem); opacity: 1; }
+}
+@keyframes blub-three {
+  0%, 42% { opacity: 0; transform: translate(.3rem, 1rem); }
+  49% { transform: translate(.2rem, .8rem); }
+  56% { transform: translate(.1rem, .6rem); }
+  63% { transform: translate(0rem, .4rem); }
+  70% { transform: translate(0rem, .2rem); }
+  77%, 100% { transform: translate(0rem, 0rem); opacity: 1; }
+}
+
+.show {
+  .svg--vis {
+
+    #fish {
+      &-top {
+        animation: float-right 6s ease-out infinite;
+        transform-origin: 60%;
+
+        @-moz-document url-prefix() {
+          transform-origin: 0%;
+          animation: none;
+        }
+      }
+      &-bottom {
+        animation: float-right 9s ease-out infinite;
+        transform-origin: 60%;
+
+        @-moz-document url-prefix() {
+          transform-origin: 0%;
+          animation: none;
+        }
+      }
+    }
+    #bubble {
+      &-top {
+        animation: blub-three 4s ease-out infinite;
+        @include no-ani-on-firefox;
+      }
+      &-middle {
+        animation: blub-two 4s ease-out infinite;
+        @include no-ani-on-firefox;
+      }
+      &-bottom {
+        animation: blub-one 4s ease-out infinite;
+        @include no-ani-on-firefox;
+      }
+    }
+  }
+}
+
+// Slide 3 - Plants
+@keyframes pour {
+  0% {
+    transform: translate(0rem,-0.6rem) rotateY(-180deg);
+  }
+  25%, 40% {
+    transform: translate(1.5rem, 0.3rem) rotateY(-180deg) rotate(-70deg);
+  }
+  60%, 100% {
+    transform: translate(0rem,-0.6rem) rotateY(-180deg);
+  }
+}
+
+@keyframes drop-top {
+  0%, 20% {
+    transform: translate(-0.4rem, -1.3rem);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(1.6rem, 6.3rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1.6rem, 6.3rem);
+    opacity: 0;
+  }
+}
+@keyframes drop-bottom {
+  0%, 30% {
+    transform: translate(-1rem, -2.4rem);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(.5rem, 5.1rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(.5rem, 5.1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.show {
+  .svg--plant {
+    #gieter {
+      transform-origin: 46%;
+      animation: pour 4s ease-out infinite;
+
+      @-moz-document url-prefix() {
+        animation: none;
+        transform-origin: -12%;
+      }
+    }
+    #drop-top {
+      animation: drop-top 4s ease-in infinite;
+      @include no-ani-on-firefox;
+    }
+
+    #drop-bottom {
+      animation: drop-bottom 4s ease-in infinite;
+      @include no-ani-on-firefox;
+    }
+
+    #leaf-one { animation: wind 3s ease-out infinite; @include no-ani-on-firefox; }
+    #leaf-two { animation: wind 5s ease-out infinite; @include no-ani-on-firefox; }
+    #leaf-three { animation: wind 4s ease-out infinite; @include no-ani-on-firefox; }
+    #leaf-four { animation: wind 3.5s ease-out infinite; @include no-ani-on-firefox; }
+    #leaf-five { animation: wind 3s ease-out infinite; @include no-ani-on-firefox; }
+    #leaf-six { animation: wind 4s ease-out infinite; @include no-ani-on-firefox; }
+    .leaf {
+      transform-origin: 25% 100%;
+    }
+  }
+  &.usp-3 {
+    em {
+      letter-spacing: 1rem;
+      transition: 3s 1s letter-spacing linear;
+    }
+  }
+}
+
+@keyframes pop-one {
+  0% {
+    transform: translateY(1.45rem) scaleX(-1) scale(0);
+  }
+  7%, 50% {
+    transform: translateY(1.45rem) scaleX(-1) scale(1);
+  }
+  57%, 100% {
+    transform: translateY(1.45rem) scaleX(-1) scale(0);
+  }
+}
+@keyframes pop-two {
+  0%, 5% {
+    transform: translate(5.2rem, 1.6rem) scaleX(-1) scale(0);
+  }
+  12%, 60% {
+    transform: translate(5.2rem, 1.6rem) scaleX(-1) scale(1);
+  }
+  67%, 100% {
+    transform: translate(5.2rem, 1.6rem) scaleX(-1) scale(0);
+  }
+}
+@keyframes pop-three {
+  0%, 10% {
+    transform: translate(10.5rem, 0.1rem) scaleX(-1) scale(0);
+  }
+  17%, 70% {
+    transform: translate(10.5rem, 0.1rem) scaleX(-1) scale(1);
+  }
+  77%, 100% {
+    transform: translate(10.5rem, 0.1rem) scaleX(-1) scale(0);
+  }
+}
+
+// Slide 4 - Piglets
+.show {
+  .svg--piglets {
+    #piggy-one {
+      animation: pop-one 6s ease-out infinite;
+      transform-origin: bottom;
+
+      @-moz-document url-prefix() {
+        transform-origin: 0%;
+        animation: none;
+      }
+    }
+    #piggy-two {
+      animation: pop-two 6s ease-out infinite;
+      transform-origin: bottom;
+
+      @-moz-document url-prefix() {
+        transform-origin: 0%;
+        animation: none;
+      }
+    }
+    #piggy-three {
+      animation: pop-three 6s ease-out infinite;
+      transform-origin: bottom;
+
+      @-moz-document url-prefix() {
+        transform-origin: 0%;
+        animation: none;
+      }
+    }
+  }
+}
+
+// Slide 5 - Peeps
+@keyframes tie1 {
+  0%, 10%, 20%, 100% { transform: scaleY(1); }
+  5%, 15% { transform: scaleY(0); }
+}
+@keyframes tie2 {
+  0%, 69%, 75%, 85%, 100% { transform: scaleX(1); }
+  70%, 80% { transform: scaleX(0); }
+}
+@keyframes tie3 {
+  0%, 14%, 20%, 30%, 100% { transform: scaleY(1); }
+  15%, 25% { transform: scaleY(0); }
+}
+@keyframes tie4 {
+  0%, 54%, 60%, 70%, 100% { transform: scaleY(1); }
+  55%, 65% { transform: scaleY(0); }
+}
+@keyframes tie5 {
+  0%, 29%, 35%, 45%, 100% { transform: scaleX(1); }
+  30%, 40% { transform: scaleX(0); }
+}
+
+.show {
+  .svg--customars {
+    #peep-one {
+      .eye-right { animation: tie1 5s linear infinite; transform-origin: left; @include no-ani-on-firefox; }
+    }
+    #peep-two {
+      .tie-right { animation: tie2 5s linear infinite; transform-origin: left; @include no-ani-on-firefox; }
+      .tie-left { animation: tie2 5s linear infinite; transform-origin: right; @include no-ani-on-firefox; }
+    }
+    #peep-three {
+      .eye-right { animation: tie3 5s linear infinite; transform-origin: left; @include no-ani-on-firefox; }
+      // .tie-left { animation: tie3 5s linear infinite; transform-origin: right; @include no-ani-on-firefox; }
+    }
+    #peep-four {
+      .eye-right { animation: tie4 5s linear infinite; transform-origin: left; @include no-ani-on-firefox; }
+      // .tie-left { animation: tie4 5s linear infinite; transform-origin: right; @include no-ani-on-firefox; }
+    }
+    #peep-five {
+      .tie-right { animation: tie5 5s linear infinite; transform-origin: left; @include no-ani-on-firefox; }
+      .tie-left { animation: tie5 5s linear infinite; transform-origin: right; @include no-ani-on-firefox; }
+    }
+  }
+}

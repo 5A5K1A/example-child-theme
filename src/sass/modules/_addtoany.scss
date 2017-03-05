@@ -1,0 +1,26 @@
+.addtoany {
+  @include container;
+
+  &--title {
+    @include adjust($menu-font-size);
+    color: $dark-blue;
+    font-family: $sans-serif-bold-font;
+    margin-bottom: 1rem;
+  }
+
+  .a2a_s_facebook {
+    background-image: url("../img/icons/green/facebook.svg");
+  }
+  .a2a_s_twitter {
+    background-image: url("../img/icons/green/twitter.svg");
+  }
+  .a2a_s_linkedin {
+    background-image: url("../img/icons/green/linkedin.svg");
+  }
+
+  .a2a_kit .a2a_svg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+  }
+}

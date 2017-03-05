@@ -1,0 +1,84 @@
+.usps {
+  position: relative;
+  padding: 2rem 0 0 0;
+  margin-bottom: 1.25rem;
+
+  @include breakpoint($align-usp-slide-content) {
+    padding-top: 3.125rem;
+  }
+
+  &--title {
+
+  }
+  &--list {
+    max-width: $max-slider-width;
+    list-style-type: none;
+    margin: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-left: 0;
+  }
+  &--item {
+
+  }
+
+  &--prev-button,
+  &--next-button {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+
+    padding: 0 .3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @include breakpoint(550px) {
+      padding: 0 1rem;
+    }
+
+    @include hocus {
+      .svg--arrow-left polygon,
+      .svg--arrow-right polygon {
+        fill: white;
+        outline: none;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--prev-button {
+    left: 0;
+    background: rgba($white, .3);
+    background: linear-gradient(90deg, rgba($white, .4), transparent);
+  }
+  &--next-button {
+    right: 0;
+    background: rgba($white, .3);
+    background: linear-gradient(90deg, transparent, rgba($white, .4));
+  }
+}
+
+.usps-js {
+  position: relative;
+  min-height: 25rem;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 75%;
+
+  @include breakpoint(550px) {
+    max-width: calc(100% - 6.875rem);
+  }
+
+  @include breakpoint($align-usp-slide-content) {
+    min-height: $min-slider-height;
+  }
+}
+
+
+// Omdat advanced manier van animaren
+// manier van animarern In firefox niet ondersteund. WEl gemaakt dat alle afbeeldingen zichbaaar zijn.

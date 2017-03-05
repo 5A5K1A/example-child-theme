@@ -1,0 +1,25 @@
+.quick-contact {
+  display: inline-block;
+  margin: 0 1.375rem 0 auto;
+  padding: 0;
+  z-index: 1;
+
+  &--item {
+    display: none;
+    margin-left: 1rem;
+
+    @include breakpoint($menu-show-quick-contact) { display: inline-block; }
+
+    &.phone {
+      display: inline-block;
+    }
+  }
+  &--link {
+    display: block;
+  }
+  &--img {
+    height: 100%;
+    max-height: 1.7rem;
+    vertical-align: middle;
+  }
+}

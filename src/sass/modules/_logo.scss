@@ -1,0 +1,50 @@
+.logo {
+  @include reset-link;
+  @include adjust($logo-font-size);
+  color: $green;
+  font-family: $logo-font;
+  font-weight: bold;
+  background: $white;
+  padding: .5rem;
+  z-index: 1;
+
+  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: 0s .2s background, .2s color;
+
+  &--name {
+    display: none;
+    @include breakpoint($menu-show-name) {
+      display: inline-block;;
+      padding-right: 1rem;
+    }
+  }
+  &--img {
+    display: inline-block;
+
+    @include breakpoint($menu-show-name) {
+      margin-right: .8rem;
+    }
+  }
+
+  &--arrow {
+    fill: $dark-blue;
+
+    &-green {
+      fill: $green;
+
+      transition: .3s fill;
+    }
+  }
+
+  @include hocus {
+    .logo--arrow-green {
+      fill: $dark-blue;
+    }
+  }
+}

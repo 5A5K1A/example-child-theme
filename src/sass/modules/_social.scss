@@ -1,0 +1,67 @@
+.social {
+  @include container;
+  max-width: 59.0625rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  @include breakpoint(1000px) {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  @include breakpoint(1300px) {
+    max-width: 63rem;
+  }
+
+  &--icons {
+    display: inline-block;
+    width: 14.625rem;
+
+    @include breakpoint(1300px) {
+      width: 15.525rem;
+    }
+  }
+	&--mail {
+    display: inline-block;
+  }
+
+  &--title {
+    color: $dark-blue;
+    box-shadow: none;
+
+    font-family: $bold-slab-font;
+    @include adjust($logo-font-size);
+  }
+  &--list {
+    padding: 0;
+  }
+  &--item {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+
+  &--link {
+    display: block;
+
+    width: 2rem; height: 2rem;
+
+    color: transparent;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 1.8rem;
+  }
+  &--facebook {
+    background-image: url("../img/icons/green/facebook.svg");
+  }
+  &--twitter {
+    background-image: url("../img/icons/green/twitter.svg");
+  }
+  &--linkedin {
+    background-image: url("../img/icons/green/linkedin.svg");
+  }
+}
+
+.mailchimp--link {
+  color: $dark-blue;
+}

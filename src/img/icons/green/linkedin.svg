@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.181px"
+	 height="31.181px" viewBox="0 -1.181 31.181 31.181" enable-background="new 0 -1.181 31.181 31.181" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  y="824.5" x="578.463" height="35.181" width="35.257" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<title>linkedin (1)</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-2">
+	<g id="Blog-pagina" transform="translate(-526.000000, -563.000000)">
+		<g id="linkedin-_x28_1_x29_" transform="translate(526.000000, 563.000000)">
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-2.037" y="-3.181" width="35.257" height="35.181">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="-2.037" y="-3.181" width="35.257" height="35.181" id="mask-2">
+				<g filter="url(#Adobe_OpacityMaskFilter)">
+					<path id="path-1" fill="#FFFFFF" d="M8.041,30H0.455V8.71h7.585V30z M4.249,7.381c-2.363,0-4.286-1.921-4.286-4.282
+						s1.923-4.28,4.286-4.28c2.362,0,4.283,1.92,4.283,4.28C8.532,5.46,6.611,7.381,4.249,7.381z M31.219,30h-7.575V19.63
+						c0-3.105-0.378-4.582-2.522-4.582c-2.171,0-3.017,1.236-3.017,4.413V30h-7.572V8.71h7.323v1.506c1.166-1.098,2.934-2,5.244-2
+						c7.153,0,8.116,5.145,8.116,10.175V30H31.219L31.219,30z"/>
+				</g>
+			</mask>
+			<g id="Capa_1" mask="url(#mask-2)">
+				<g id="Shape">
+					
+						<rect x="0.455" y="8.71" fill="none" stroke="#57AB27" stroke-width="4" stroke-linecap="round" width="7.585" height="21.29"/>
+					<path fill="none" stroke="#57AB27" stroke-width="4" stroke-linecap="round" d="M4.249,7.381c-2.363,0-4.286-1.921-4.286-4.282
+						s1.923-4.28,4.286-4.28c2.362,0,4.283,1.92,4.283,4.28C8.532,5.46,6.611,7.381,4.249,7.381z"/>
+					<path fill="none" stroke="#57AB27" stroke-width="4" stroke-linecap="round" d="M31.219,30h-7.575V19.63
+						c0-3.105-0.378-4.582-2.522-4.582c-2.171,0-3.017,1.236-3.017,4.413V30h-7.572V8.71h7.323v1.506c1.166-1.098,2.934-2,5.244-2
+						c7.153,0,8.116,5.145,8.116,10.175V30H31.219L31.219,30z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

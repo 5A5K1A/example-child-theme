@@ -1,0 +1,109 @@
+.bg {
+  &-rood {
+    background-color: #FFCDD2;
+
+    // on the profit page
+    &--underline {
+      display: inline;
+      border: 1px solid #FFCDD2;
+      box-shadow: 0 .85rem 0 0 #FFCDD2 inset,0 1.25rem 0 0 $profile-red inset;
+      @include breakpoint($adjust-sm) { box-shadow: 0 .75rem 0 0 #FFCDD2 inset,0 1.25rem 0 0 $profile-red inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.05rem 0 0 #FFCDD2 inset,0 1.55rem 0 0 $profile-red inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 1.1rem 0 0 #FFCDD2 inset,0 1.7rem 0 0 $profile-red inset; }
+    }
+    // on the profile page
+    &-underline {
+      display: inline;
+      border: 1px solid #FFCDD2;
+      box-shadow: 0 0.8rem 0 0 #FFCDD2 inset,0 1.3rem 0 0 $profile-red inset;
+      @include breakpoint(560px) { box-shadow: 0 1.3rem 0 0 #FFCDD2 inset,0 1.8rem 0 0 $profile-red inset; }
+      @include breakpoint($adjust-sm) { box-shadow: 0 1.45rem 0 0 #FFCDD2 inset,0 2.05rem 0 0 $profile-red inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.65rem 0 0 #FFCDD2 inset,0 2.25rem 0 0 $profile-red inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 2.6rem 0 0 #FFCDD2 inset,0 3.4rem 0 0 $profile-red inset; }
+    }
+  }
+  &-oranje {
+    background-color: #FFE0B2;
+
+    &--underline {
+      display: inline;
+      border: 1px solid #FFE0B2;
+      box-shadow: 0 .85rem 0 0 #FFE0B2 inset,0 1.25rem 0 0 $profile-orange inset;
+      @include breakpoint($adjust-sm) { box-shadow: 0 .75rem 0 0 #FFE0B2 inset,0 1.25rem 0 0 $profile-orange inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.05rem 0 0 #FFE0B2 inset,0 1.55rem 0 0 $profile-orange inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 1.1rem 0 0 #FFE0B2 inset,0 1.7rem 0 0 $profile-orange inset; }
+    }
+    &-underline {
+      display: inline;
+      border: 1px solid #FFE0B2;
+      box-shadow: 0 0.8rem 0 0 #FFE0B2 inset,0 1.3rem 0 0 $profile-orange inset;
+      @include breakpoint(560px) { box-shadow: 0 1.3rem 0 0 #FFE0B2 inset,0 1.8rem 0 0 $profile-orange inset; }
+      @include breakpoint($adjust-sm) { box-shadow: 0 1.45rem 0 0 #FFE0B2 inset,0 2.05rem 0 0 $profile-orange inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.65rem 0 0 #FFE0B2 inset,0 2.25rem 0 0 $profile-orange inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 2.6rem 0 0 #FFE0B2 inset,0 3.4rem 0 0 $profile-orange inset; }
+    }
+  }
+  &-geel {
+    background-color: #FFF9C4;
+
+    &--underline {
+      display: inline;
+      border: 1px solid #FFF9C4;
+      box-shadow: 0 .85rem 0 0 #FFF9C4 inset,0 1.25rem 0 0 $profile-yellow inset;
+      @include breakpoint($adjust-sm) { box-shadow: 0 .75rem 0 0 #FFF9C4 inset,0 1.25rem 0 0 $profile-yellow inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.05rem 0 0 #FFF9C4 inset,0 1.55rem 0 0 $profile-yellow inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 1.1rem 0 0 #FFF9C4 inset,0 1.7rem 0 0 $profile-yellow inset; }
+    }
+    &-underline {
+      display: inline;
+      border: 1px solid #FFF9C4;
+      box-shadow: 0 0.8rem 0 0 #FFF9C4 inset,0 1.3rem 0 0 $profile-yellow inset;
+      @include breakpoint(560px) { box-shadow: 0 1.3rem 0 0 #FFF9C4 inset,0 1.8rem 0 0 $profile-yellow inset; }
+      @include breakpoint($adjust-sm) { box-shadow: 0 1.45rem 0 0 #FFF9C4 inset,0 2.05rem 0 0 $profile-yellow inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.65rem 0 0 #FFF9C4 inset,0 2.25rem 0 0 $profile-yellow inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 2.6rem 0 0 #FFF9C4 inset,0 3.4rem 0 0 $profile-yellow inset; }
+    }
+  }
+  &-groen {
+    background-color: #D1F1BE;
+
+    &--underline {
+      display: inline;
+      border: 1px solid #D1F1BE;
+      box-shadow: 0 .85rem 0 0 #D1F1BE inset,0 1.25rem 0 0 $profile-green inset;
+      @include breakpoint($adjust-sm) { box-shadow: 0 .75rem 0 0 #D1F1BE inset,0 1.25rem 0 0 $profile-green inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.05rem 0 0 #D1F1BE inset,0 1.55rem 0 0 $profile-green inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 1.1rem 0 0 #D1F1BE inset,0 1.7rem 0 0 $profile-green inset; }
+    }
+    &-underline {
+      display: inline;
+      border: 1px solid #D1F1BE;
+      box-shadow: 0 0.8rem 0 0 #D1F1BE inset,0 1.3rem 0 0 $profile-green inset;
+      @include breakpoint(560px) { box-shadow: 0 1.3rem 0 0 #D1F1BE inset,0 1.8rem 0 0 $profile-green inset; }
+      @include breakpoint($adjust-sm) { box-shadow: 0 1.45rem 0 0 #D1F1BE inset,0 2.05rem 0 0 $profile-green inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.65rem 0 0 #D1F1BE inset,0 2.25rem 0 0 $profile-green inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 2.6rem 0 0 #D1F1BE inset,0 3.4rem 0 0 $profile-green inset; }
+    }
+  }
+  &-blauw {
+    background-color: #E0F7FA;
+
+    &--underline {
+      display: inline;
+      border: 1px solid #E0F7FA;
+      box-shadow: 0 .85rem 0 0 #E0F7FA inset,0 1.25rem 0 0 $profile-blue inset;
+      @include breakpoint($adjust-sm) { box-shadow: 0 .75rem 0 0 #E0F7FA inset,0 1.25rem 0 0 $profile-blue inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.05rem 0 0 #E0F7FA inset,0 1.55rem 0 0 $profile-blue inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 1.1rem 0 0 #E0F7FA inset,0 1.7rem 0 0 $profile-blue inset; }
+    }
+    &-underline {
+      display: inline;
+      border: 1px solid #E0F7FA;
+      box-shadow: 0 0.8rem 0 0 #E0F7FA inset,0 1.3rem 0 0 $profile-blue inset;
+      @include breakpoint(560px) { box-shadow: 0 1.3rem 0 0 #E0F7FA inset,0 1.8rem 0 0 $profile-blue inset; }
+      @include breakpoint($adjust-sm) { box-shadow: 0 1.45rem 0 0 #E0F7FA inset,0 2.05rem 0 0 $profile-blue inset; }
+      @include breakpoint($adjust-md) { box-shadow: 0 1.65rem 0 0 #E0F7FA inset,0 2.25rem 0 0 $profile-blue inset; }
+      @include breakpoint($adjust-lg) { box-shadow: 0 2.6rem 0 0 #E0F7FA inset,0 3.4rem 0 0 $profile-blue inset; }
+    }
+  }
+}

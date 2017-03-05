@@ -1,0 +1,50 @@
+.is-header {
+  .menu {
+    position: fixed;
+    top: -120vh; bottom: 0;
+    left: 0; right: 0;
+
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: $green;
+
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 5rem 2rem;
+    @include breakpoint(800px) { padding: 7rem 2rem; }
+    @include breakpoint(900px) { padding: 7rem 4rem; }
+    @include breakpoint(1040px) { padding: 9rem 5rem; }
+    @include breakpoint(1300px) { padding: 14rem 8rem; }
+
+    transition: .4s transform;
+
+    &--lists {
+      @include breakpoint(1000px) {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      &-container {
+        padding-left: 1.25rem;
+        border-left: 2px solid $white;
+        color: $white;
+      }
+    }
+
+    &--list-title {
+      @include adjust($header-m);
+      margin: 0 0 1rem 0;
+    }
+
+    &-item {
+      opacity: 0;
+
+      transition: .2s opacity;
+    }
+  }
+}

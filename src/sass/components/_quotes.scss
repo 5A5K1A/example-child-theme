@@ -1,0 +1,39 @@
+blockquote {
+  max-width: 50rem;
+  width: 100%;
+  margin: 3rem auto 0 auto;
+
+  @include adjust($header-m);
+  line-height: 1.3;
+  text-align: center;
+  color: $white;
+
+  p {
+    font-family: $bold-italic-slab-font;
+    margin: 0;
+
+     &:before,
+     &:after {
+       content: '"';
+     }
+
+     &:first-of-type,
+     &:last-of-type {
+       display: none;
+     }
+  }
+  footer {
+    font-family: $normal-slab-font;
+
+    &:before {
+      content: "- "
+    }
+  }
+}
+
+.home,
+.single-post {
+  blockquote {
+    color: $green;
+  }
+}

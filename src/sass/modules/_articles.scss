@@ -1,0 +1,27 @@
+.articles {
+  padding-top: 3rem;
+  @include adjust($body-padding, "margin-bottom");
+
+  @include breakpoint($horizontal-align) {
+    padding-top: 6rem;
+  }
+
+  &--intro,
+  &--section {
+    padding-bottom: $aricles-section-bottom-margin;
+
+    @include breakpoint($horizontal-align) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &--section {
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+}

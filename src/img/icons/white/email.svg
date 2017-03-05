@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.182px"
+	 height="31.181px" viewBox="-0.591 -9.181 31.182 31.181" enable-background="new -0.591 -9.181 31.182 31.181"
+	 xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  y="830.5" x="579.909" height="23.253" width="31.181" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<title>Artboard 2</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="Artboard-2">
+		<g id="email-envelope-outline-shape-with-rounded-corners-copy">
+			<g id="Capa_1">
+				<path id="Shape" fill="#FFFFFF" d="M26.692-1.253H3.307c-2.152,0-3.897,1.735-3.897,3.875v15.503
+					c0,2.14,1.745,3.875,3.897,3.875h23.386c2.153,0,3.897-1.735,3.897-3.875V2.622C30.59,0.482,28.846-1.253,26.692-1.253
+					L26.692-1.253z M20.276,9.088l8.252-7.03c0.056,0.182,0.113,0.363,0.113,0.563v15.503c0,0.135-0.052,0.253-0.078,0.38
+					L20.276,9.088L20.276,9.088z M26.692,0.685c0.131,0,0.244,0.049,0.366,0.074L15,11.036L2.941,0.758
+					c0.122-0.024,0.236-0.074,0.365-0.074H26.692L26.692,0.685z M1.435,18.503c-0.026-0.127-0.077-0.243-0.077-0.378V2.622
+					c0-0.2,0.058-0.382,0.115-0.563L9.72,9.087L1.435,18.503L1.435,18.503z M3.307,20.062c-0.197,0-0.375-0.056-0.556-0.111
+					l8.45-9.602l3.165,2.696c0.182,0.157,0.408,0.235,0.634,0.235s0.452-0.078,0.634-0.235l3.165-2.696l8.449,9.602
+					c-0.179,0.056-0.357,0.111-0.556,0.111H3.307L3.307,20.062z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,153 @@
+@mixin rangeThumb {
+  border: 0;
+  height: 2.6em;
+  width: 2.6em;
+  border-radius: 1.3em;
+  background: $dark-blue;
+  cursor: pointer;
+  margin-top: -1.3em;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+  height: 2.2em;
+  cursor: pointer;
+  border-radius: 0;
+  border-top: 1em solid $brown;
+  border-bottom: 1em solid $brown;
+  background: $light-brown;
+}
+
+.calculator {
+
+  .section--calculator {
+    max-width: 35rem;
+    display: block;
+
+    @include breakpoint($horizontal-align) {
+      max-width: 50rem;
+      // display: inline-block;
+      margin: 0 $section-padding;
+    }
+
+    p ~ h1,
+    p ~ h2,
+    p ~ h3,
+    p ~ h4 {
+      &:before {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .form {
+
+    font-family: "Josefin Sans Bold",sans-serif;
+    font-size: 1.5rem;
+
+    fieldset {
+      border: 0;
+      margin-bottom: 1.5em;
+      padding: 0;
+    }
+
+    input {
+      &[type="number"] {
+        display: inline-block;
+        padding: .3rem 1rem;
+
+        color: $dark-blue;
+        font-family: $sans-serif-bold-font;
+        @include adjust($menu-font-size);
+      }
+      &[type="submit"] {
+        display: block;
+        padding: .3rem 1rem;
+        margin-bottom: 3rem;
+        border: 2px solid white;
+        background: transparent;
+        color: $white;
+        font-family: $sans-serif-bold-font;
+        @include adjust($menu-font-size);
+      }
+    }
+
+    &--amount {
+
+      span {
+        &.left {
+          float: left;
+        }
+        &.right {
+          float: right;
+        }
+      }
+
+      input {
+        display: flex;
+        position: relative;
+
+        &[type="range"] {
+          -webkit-appearance: none;
+          background-color: $light-brown;
+          border-bottom: 1em solid $brown;
+          border-top: 1em solid $brown;
+          height: 2.2em;
+          width: 100%;
+          margin: 1em 0;
+
+          &:focus {
+            background: none;
+            outline: none;
+          }
+
+          // Thumb
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            @include rangeThumb;
+          }
+
+          &::-moz-range-thumb {
+            @include rangeThumb;
+          }
+
+          &::-ms-thumb {
+            @include rangeThumb;
+          }
+
+          // Track
+          &::-webkit-slider-runnable-track {
+            @include rangeTrack;
+          }
+
+          &::-moz-range-track {
+            @include rangeTrack;
+          }
+
+          &::-ms-track {
+            @include rangeTrack;
+            border-color: transparent;
+            color: transparent;
+          }
+
+          &::-moz-range-progress {
+            background-color: lime;
+          }
+          &::-ms-fill-lower {
+            background: blue;
+          }
+          &::-ms-fill-upper {
+            background: green;
+          }
+          &:focus::-ms-fill-lower {
+            background: blue;
+          }
+          &:focus::-ms-fill-upper {
+            background: green;
+          }
+
+        }
+      }
+    }
+  }
+}

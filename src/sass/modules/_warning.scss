@@ -1,0 +1,4 @@
+.warning {
+  color: $profile-red;
+  @include adjust($profile-disc-font-size);
+}

@@ -1,0 +1,67 @@
+.menu-icon {
+  display: inline-block;
+  width: 2rem; height: 2rem;
+  vertical-align: middle;
+
+  g {
+    transform: translateY(4px);
+  }
+  path {
+    stroke: $dark-blue;
+    stroke-width: 3;
+  }
+  &--top {
+    transform-origin: 2rem 0%;
+    transition: .2s transform;
+  }
+  &--middle {
+    margin: .5rem 0;
+    transition: .1s .2s opacity;
+  }
+  &--bottom {
+    transform: scaleX(.5);
+    transform-origin: 2rem 1.45rem;
+
+    transition: .2s transform;
+  }
+}
+
+
+.menu-toggle {
+  padding: .6375rem 1.1875rem .75rem;
+  margin-right: .875rem;
+  background: $white;
+  cursor: pointer;
+  border: 2px solid $white;
+  z-index: 1;
+
+  display: inline-block;
+
+  &--name {
+    display: none;
+    text-transform: uppercase;
+    color: $dark-blue;
+    font-family: $sans-serif-bold-font;
+    font-size: 1rem;
+    padding-left: .6875rem;
+    padding-right: 1.1875rem;
+    line-height: 1;
+    vertical-align: middle;
+
+    @include breakpoint($menu-show-menu-name) {
+      display: inline-block;
+    }
+  }
+  &--container {
+
+  }
+
+  @include hocus {
+    outline: none;
+
+    .menu-icon--bottom {
+      transform: scale(1);
+    }
+
+  }
+}

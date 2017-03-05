@@ -1,0 +1,170 @@
+// Colors
+$green:       #57AB27;
+$brown:       #BCB6AF;
+$light-brown: #F4F2F0;
+$light-blue:  #80DEEA;
+$dark-blue:   #132862;
+$white:       #fff;
+$gray:        #F4F2F0;
+
+$text-color:  $white;
+
+// Profile colors
+$profile-red: #EF5350;
+$profile-orange: #FF9800;
+$profile-yellow: #FFEB3B;
+$profile-green: #71D538;
+$profile-blue: #80DEEA;
+
+// Font Familys
+$main-font:               "Raleway Medium", sans-serif;
+$sans-serif-bold-font:    "Josefin Sans Bold", sans-serif;
+$bold-italic-slab-font:   "Josefin Slab Bold Italic", sans-serif;
+$bold-slab-font:          "Josefin Slab Bold", sans-serif;
+$normal-slab-font:        "Josefin Slab Regular", sans-serif;
+$logo-font:               "montserrat-bold", sans-serif;
+
+
+// Font-sizes
+$slide-number: (
+  xs: 3rem,
+  sm: 7rem,
+  md: 9rem,
+  lg: 10.25rem // 164px
+);
+
+$header-l: (
+  xs: 3rem,
+  sm: 3.3rem,
+  md: 3.6rem,
+  lg: 4rem // 64px
+);
+
+$header-m: (
+  xs: 1.5rem,
+  sm: 1.8rem,
+  md: 2.4rem,
+  lg: 3rem // 48px
+);
+$profile-term: (
+  xs: 1.5rem,
+  sm: 1.8rem,
+  md: 1.9rem,
+  lg: 3rem // 48px
+);
+
+$header-s: (
+  xs: 1.6rem,
+  sm: 1.8rem,
+  md: 2rem,
+  lg: 2.25rem // 36px
+);
+
+$logo-font-size: (
+  xs: 1.4rem,
+  sm: 1.4rem,
+  md: 1.8rem,
+  lg: 2rem // 32px
+);
+
+$graph-title-font-size: (
+  xs: 1.3rem,
+  sm: 1.4rem,
+  md: 1.5rem,
+  lg: 1.625rem // 26px
+);
+
+$profile-disc-font-size: (
+  xs: 1rem,
+  sm: 1.1rem,
+  md: 1.2rem,
+  lg: 1.375rem // 22px
+);
+
+$menu-font-size: (
+  xs: 1.3rem,
+  sm: 1.3rem,
+  md: 1.3rem,
+  lg: 1.375rem // 22px
+);
+
+// adjust values
+$body-padding: (
+  xs: .3rem,
+  sm: .6rem,
+  md: 1rem,
+  lg: 1.25rem // 20px
+);
+
+// Layout values
+$container:           73.125rem; // 1170px
+$gutter:              1.125rem; // 18px
+$double-gutter:       $gutter * 2; // 36px
+
+$large-gutter:        8.125rem; // 130px
+$large-double-gutter: $large-gutter * 2; // 260px
+$large-container:     87.5rem; // 1400px
+
+$section-padding: 2rem;
+$double-section-padding: $section-padding * 2;
+$aricles-section-bottom-margin: 3.625rem;
+
+// Slider
+$min-slider-height: 30rem;
+$max-slider-width: 51rem;
+
+// Blog
+$blog-content-width: 54rem;
+
+// Profiles
+$profile-heigth: 12.5rem;
+
+// chart
+$chart-width: 45rem;
+$marge-to-graphs: 780px;
+$graphs-no-scroll: 906px;
+
+// Globally used breakpoints
+  // Layout
+  $bp-container: $container + $double-gutter; // 1206px
+
+  $large-bp-container: $container + $large-double-gutter + $double-section-padding; // 1690px
+  $horizontal-align: 59.375rem; // 950px
+
+  // Menu breakpoints
+  $menu-show-login: 450px;
+  $menu-show-name: 550px;
+  $menu-show-quick-contact: 650px;
+  $menu-show-menu-name: 760px;
+  $menu-show-sign-up: 900px;
+
+  // Footer
+  $bp-flex-footer: 871px;
+
+  // people
+  $persons-align: 800px;
+
+  // Flexblocks
+  $bp-helpdesk-img: 1170px;
+
+  // USP slider
+  $align-usp-slide-content: 800px;
+  $horizontal-align-usp-buttons: 1050px;
+
+  // Steps
+  $bp-icon-left: 634px;
+
+  // Video
+  $bp-video-own-height: 900px;
+
+  // Profiles
+  $bp-profile--align-subs: 560px;
+  $bp-probile-half-align: 930px;
+  $bp-profile--align-all: 1063px;
+  $bp-profile--squere: 1201px;
+
+  // The breakpoint for the adjust mixin
+  $adjust-xs: 500px;
+  $adjust-sm: 800px;
+  $adjust-md: 1000px;
+  $adjust-lg: 1300px;

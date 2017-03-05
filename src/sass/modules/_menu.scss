@@ -1,0 +1,46 @@
+.menu {
+  z-index: -1;
+
+  &--lists-container {
+    max-width: 23rem;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: top;
+
+    @include breakpoint(706px) { margin: 1.6rem; }
+  }
+
+  &--list {
+    margin: 0;
+    padding: 0;
+    @include adjust($menu-font-size);
+  }
+
+  &--lists {
+    display: inline-block;
+  }
+
+  &--list-title {
+    font-family: $bold-slab-font;
+  }
+
+  &-item {
+    display: block;
+    font-family: $sans-serif-bold-font;
+    line-height: 1;
+    margin: 1.25rem 0;
+
+    transition: .2s opacity;
+
+    a {
+      text-decoration: none;
+
+      @include hocus {
+        text-decoration: underline;
+      }
+    }
+  }
+  &--contact {
+    display: inline-block;
+  }
+}

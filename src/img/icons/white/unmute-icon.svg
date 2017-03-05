@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>volume</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-498.000000, -286.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="volume" transform="translate(499.000000, 287.000000)">
+                <ellipse id="Oval" cx="30" cy="30" rx="30" ry="30"></ellipse>
+                <path d="M36.1106778,13.0044008 L35.9489489,13 C35.5883595,13 35.1753045,13.1114637 34.7032515,13.397721 C34.7032515,13.397721 25.5899804,21.3483595 25.1922593,21.7417485 L20.1854028,21.7417485 C18.9791061,21.7418173 18,22.7208546 18,23.92722 L18,37.3174361 C18,38.526002 18.9791061,39.5028389 20.1854028,39.5028389 L25.1922593,39.5028389 C25.5899804,39.8962279 34.7032515,47.5649411 34.7032515,47.5649411 C35.1753045,47.8555992 35.5883595,47.9670629 35.9489489,47.9670629 L36.1106778,47.9605305 C36.9193222,47.8840668 37.4962377,47.2065521 37.6688998,46.4919057 L37.6688998,14.4774263 C37.4984381,13.7583792 36.9193222,13.0809332 36.1106778,13.0044008 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

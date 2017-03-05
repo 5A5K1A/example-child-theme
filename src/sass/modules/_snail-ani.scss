@@ -1,0 +1,79 @@
+@keyframes snail-walk {
+  0% {
+    transform:
+      translateX(-700%)
+      translateY(62%)
+      rotate(3deg);
+  }
+  40% {
+    transform:
+      translateX(-310%)
+      translateY(-25%)
+      rotate(3deg);
+  }
+  45% {
+    transform:
+      translateX(-310%)
+      translateY(-25%)
+      rotate(55deg);
+  }
+  70% {
+    transform:
+      translateX(-210%)
+      translateY(55%)
+      rotate(55deg);
+  }
+  75% {
+    transform:
+      translateX(-210%)
+      translateY(55%)
+      rotate(0deg);
+  }
+  100% {
+    transform:
+      translateX(0)
+      translateY(0)
+      rotate(0deg);
+  }
+}
+
+@keyframes snail-path {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  39% {
+    stroke-dashoffset: 195;
+  }
+  45% {
+    stroke-dashoffset: 200;
+  }
+  70% {
+    stroke-dashoffset: 125;
+  }
+  73% {
+    stroke-dashoffset: 125;
+  }
+  100% {
+    stroke-dashoffset: -34;
+  }
+}
+
+$snail-ani-speed: 20s;
+
+.snail-ani {
+  .slowinvest {
+    &--img-path path {
+      animation: snail-path $snail-ani-speed normal linear forwards;
+      @include no-ani-on-firefox;
+    }
+    &--img-snail {
+      transform-origin: 50% 50%;
+      animation: snail-walk $snail-ani-speed normal linear forwards;
+
+      @-moz-document url-prefix() {
+        transform-origin: 0%;
+        animation: none;
+      }
+    }
+  }
+}

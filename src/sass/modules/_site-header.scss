@@ -1,0 +1,11 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  @include adjust($body-padding, "left");
+  @include adjust($body-padding, "right");
+
+  z-index: 1;
+  background-color: rgba($white, 0);
+
+  transition: .3s background;
+}

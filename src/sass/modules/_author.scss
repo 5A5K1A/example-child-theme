@@ -1,0 +1,61 @@
+.author {
+  background: $light-brown;
+  margin-bottom: 2.375rem;
+
+  @include breakpoint(900px) {
+    margin-bottom: 4.375rem;
+  }
+
+  &--container {
+    @include container;
+  }
+
+  &--img {
+    display: inline-block;
+    margin-right: 2.1875rem;
+    vertical-align: bottom;
+  }
+
+  &--meta {
+    max-width: 27.5rem;
+    display: inline-block;
+  }
+  &--name {
+    display: inline-block;
+    margin-bottom: 1.05rem;
+    color: $dark-blue;
+
+    @include adjust($menu-font-size);
+    font-family: $sans-serif-bold-font;
+  }
+
+  &--link {
+    display: inline-block;
+    margin-right: 1.4375rem;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  &--intro {
+    color: $green;
+    margin-bottom: 1.6875rem;
+    margin-top: 0;
+  }
+
+  &--mail {
+    width: 1.9rem; height: 1.9rem;
+    background-image: url("../img/icons/blue/email.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  &--linkedin {
+    width: 1.9rem; height: 1.9rem;
+    background-image: url("../img/icons/blue/linkedin.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}

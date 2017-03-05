@@ -1,0 +1,22 @@
+.section .faqs {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+
+  &--title {
+    margin: 4rem 0 1rem 0;
+
+    &:first-of-type {
+      margin-top: 0rem;
+    }
+  }
+
+  &--list {
+    max-width: 50rem;
+    margin: 0 2rem 7rem 2rem; 
+    padding: 0;
+  }
+  &--item {
+    list-style-type: none;
+    margin: 0 0 1.25rem 0;
+  }
+}

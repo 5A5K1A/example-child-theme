@@ -1,0 +1,53 @@
+.scroll {
+  .site-header {
+    position: fixed;
+    top: 0;
+    background-color: $white;
+  }
+
+  .menu-toggle {
+    border: 2px solid $dark-blue;
+  }
+
+  .svg {
+    &-mail--path,
+    &-location--group {
+      fill: $dark-blue;
+    }
+
+    &-tel--path {
+      stroke: $dark-blue;
+    }
+  }
+
+  .nav {
+    &--button {
+
+      &.login {
+        color: $green;
+      }
+      &.sign-up {
+        color: $white;
+        background: $green;
+        border: 2px solid $green;
+      }
+    }
+  }
+
+
+  .location {
+    @include hocus {
+      .svg-location--group { fill: $green; }
+    }
+  }
+  .mail {
+    @include hocus {
+      .svg-mail--path { fill: $green; }
+    }
+  }
+  .phone {
+    @include hocus {
+      .svg-tel--path { stroke: $green; }
+    }
+  }
+}

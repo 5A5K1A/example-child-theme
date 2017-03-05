@@ -1,0 +1,26 @@
+.is-footer {
+  .menu {
+
+    @include breakpoint($bp-flex-footer) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &--lists-container {
+      color: $green;
+    }
+
+
+    &--list-title {
+      color: $dark-blue;
+      @include adjust($logo-font-size);
+      margin: 0 0 1rem 0;
+    }
+
+    &-item {
+
+    }
+  }
+}

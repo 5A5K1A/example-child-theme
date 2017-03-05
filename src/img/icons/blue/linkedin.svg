@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.68684896,29.7501534 L0.468161236,29.7501534 L0.468161236,9.48847713 L7.68684896,9.48847713 L7.68684896,29.7501534 Z M4.07879295,8.22380301 C1.83019723,8.22380301 0,6.39556333 0,4.14892514 C0,1.90228695 1.83019723,0.0753866369 4.07879295,0.0753866369 C6.32677051,0.0753866369 8.1550102,1.90290512 8.1550102,4.14892514 C8.1550102,6.39628453 6.32677051,8.22380301 4.07879295,8.22380301 Z M29.7435897,29.7501534 L22.5347927,29.7501534 L22.5347927,19.8802348 C22.5347927,16.9264094 22.1759447,15.5206893 20.1345392,15.5206893 C18.0693341,15.5206893 17.264785,16.6979953 17.264785,19.7200256 L17.264785,29.7502564 L10.0586667,29.7502564 L10.0586667,9.48847713 L17.0277165,9.48847713 L17.0277165,10.9220149 C18.1374359,9.87648224 19.8193752,9.01835835 22.0183112,9.01835835 C28.8251942,9.01835835 29.7428685,13.9136517 29.7428685,18.7022076 L29.7428685,29.7501534 L29.7435897,29.7501534 L29.7435897,29.7501534 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="29.7435897" height="29.6748698" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Blog-pagina" transform="translate(-526.000000, -563.000000)" stroke="#132862" stroke-width="4">
+            <g id="linkedin-(1)" transform="translate(526.000000, 563.000000)">
+                <g id="Capa_1">
+                    <use id="Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

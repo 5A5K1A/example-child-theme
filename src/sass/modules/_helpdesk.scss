@@ -1,0 +1,120 @@
+.helpdesk {
+  &.section {
+    @include container;
+    max-width: $large-container;
+    margin-bottom: $aricles-section-bottom-margin;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include breakpoint($bp-helpdesk-img) {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+
+  &--text {
+    max-width: 41.5rem;
+    margin-bottom: 0;
+
+    @include breakpoint($bp-helpdesk-img) {
+      display: inline-block;
+      width: 55%;
+      margin-left: 4.7rem;
+    }
+  }
+  &--img {
+    padding: 0;
+    max-width: 33.75rem;
+
+    display: none;
+    @include breakpoint($bp-helpdesk-img) {
+      display: inline-block;
+      width: 38%;
+    }
+  }
+
+  &--intro {
+    @include adjust($logo-font-size);
+    font-family: $sans-serif-bold-font;
+  }
+  &--list-contact,
+  &--list-social {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+
+    font-family: $sans-serif-bold-font;
+    @include adjust($menu-font-size);
+  }
+  &--list-social {
+    @include breakpoint(539px) {
+      margin-left: 4rem;
+    }
+  }
+  &--item {
+    margin-bottom: 1rem;
+    list-style-type: none !important;
+
+    @include breakpoint($bp-helpdesk-img) {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &--link {
+    text-decoration: none;
+
+    @include hocus {
+      text-decoration: underline;
+    }
+
+    &.helpdesk--adress {
+      @include hocus {
+        text-decoration: none;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 2rem; height: 2rem;
+      display: inline-block;
+      margin-right: 1.2rem;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &.helpdesk {
+      &--tel:before {
+        background-image: url("../img/icons/white/telephone.svg");
+      }
+      &--mail:before {
+        background-image: url("../img/icons/white/email.svg");
+      }
+      &--adress {
+        display: inline-flex;
+        &:before {
+          background-image: url("../img/icons/white/location.svg");
+          vertical-align: super;
+          margin-top: 0.3em;
+        }
+      }
+      &--facebook:before {
+        background-image: url("../img/icons/white/facebook.svg");
+      }
+      &--twitter:before {
+        background-image: url("../img/icons/white/twitter.svg");
+      }
+      &--linkedin:before {
+        background-image: url("../img/icons/white/linkedin.svg");
+        height: 1.7rem;
+      }
+    }
+  }
+}

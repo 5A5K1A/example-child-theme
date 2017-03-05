@@ -1,0 +1,16 @@
+.blog-page {
+  margin-bottom: 7rem;
+
+  &--title {
+    @include container;
+
+    margin-top: 2rem;
+
+    @include breakpoint(800px) {
+      margin-top: 5rem;
+    }
+  }
+  &.articles {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.state {
+
+  &-play {
+    background-image: url("../img/icons/white/play-icon.png");
+    background-image: url("../img/icons/white/play-icon.svg");
+  }
+  &-pause {
+    background-image: url("../img/icons/white/pause-icon.png");
+    background-image: url("../img/icons/white/pause-icon.svg");
+
+    background-position: 50% 50%;
+  }
+
+  &-mute {
+    background-image: url("../img/icons/white/unmute.png");
+    background-image: url("../img/icons/white/unmute.svg");
+  }
+  &-unmute {
+    background-image: url("../img/icons/white/mute.png");
+    background-image: url("../img/icons/white/mute.svg");
+  }
+}

@@ -1,0 +1,84 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.product {
+  max-width: 48.125rem;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+  padding: 0 .3rem 2rem .3rem;
+
+  background: $gray;
+  @include reset-link;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(33.125rem) {
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  @include breakpoint(46.25rem) {
+    padding: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include hocus {
+    .svg--beheer path:nth-of-type(1) {
+      animation: rotate 3s infinite linear;
+      transform-origin: center;
+    }
+    .svg--advies {
+      animation: rotate 3s infinite linear;
+      transform-origin: center;
+    }
+  }
+
+  &--left,
+  &--right {
+    display: block;
+
+    @include breakpoint(33.125rem) {
+      display: inline-block;;
+    }
+  }
+
+  &--left {
+    padding: 1.875rem 2.875rem 1.875rem 3.4375rem;
+  }
+  &--right {
+    text-align: center;
+    @include breakpoint(33.125rem) {
+      text-align: left;
+    }
+  }
+
+  &--title {
+    margin: 0;
+    padding-bottom: 1rem;
+    @include reset-title-style;
+    line-height: 1;
+    font-family: $bold-slab-font;
+    @include adjust($header-m);
+    color: $green !important;
+  }
+  &--name {
+    margin: 0;
+    font-family: $sans-serif-bold-font;
+    @include adjust($menu-font-size);
+    color: $green !important;
+  }
+  &--disc {
+    margin: 0;
+    color: $green !important;
+  }
+}

@@ -1,0 +1,10 @@
+.action {
+  &.section {
+    flex-direction: column;
+  }
+
+  &--button {
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+  }
+}

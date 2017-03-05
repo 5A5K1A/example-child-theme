@@ -1,0 +1,21 @@
+.mute {
+  position: absolute;
+  bottom: 1rem; right: 6rem;
+  width: 3.75rem; height: 3.75rem;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: 2rem;
+  transition: .3s background-position;
+  transform-origin: 50% 50%;
+
+  @include hocus {
+    outline: none;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

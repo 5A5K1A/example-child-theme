@@ -1,0 +1,90 @@
+/* example
+@font-face {
+    font-family: "Akzidenz Grotesk Con Bold";
+    src: url("../fonts/akzidenzgroteskbe-boldcn-webfont.eot");
+    src: url("../fonts/akzidenzgroteskbe-boldcn-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/akzidenzgroteskbe-boldcn-webfont.woff") format("woff"),
+         url("../fonts/akzidenzgroteskbe-boldcn-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+$font-name: "raleway-medium";
+$font-folder: "raleway";
+$font-type: "medium";
+@font-face {
+	font-family: "Raleway Medium";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-name: "josefin-sans-bold";
+$font-folder: "josefin-sans";
+$font-type: "bold";
+@font-face {
+	font-family: "Josefin Sans Bold";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-name: "josefin-slab-regular";
+$font-folder: "josefin-slab";
+$font-type: "regular";
+@font-face {
+	font-family: "Josefin Slab Regular";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-name: "josefin-slab-bold-italic";
+$font-folder: "josefin-slab";
+$font-type: "bold-italic";
+@font-face {
+	font-family: "Josefin Slab Bold Italic";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-name: "josefin-slab-bold";
+$font-folder: "josefin-slab";
+$font-type: "bold";
+@font-face {
+	font-family: "Josefin Slab Bold";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-name: "montserrat-bold";
+$font-folder: "montserrat";
+$font-type: "bold";
+@font-face {
+	font-family: "Montserrat Bold";
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff");
+	src: url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff2") format("woff2"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.woff") format("woff"),
+		 url("../fonts/#{$font-folder}/#{$font-type}/#{$font-name}.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,23 @@
+.video-custom {
+
+  video {
+    width: auto; height: 100%;
+
+    @include breakpoint($bp-video-own-height) {
+      width: 100%; height: auto;
+    }
+  }
+
+  .hero-header--title {
+    @include adjust($header-m);
+  }
+  .hero-header--subtitle {
+    @include adjust($logo-font-size);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  margin-left: -3rem;
+  transition: .3s opacity, .3s margin;
+}

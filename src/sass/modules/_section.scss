@@ -1,0 +1,43 @@
+.section {
+  @include container;
+  max-width: 80.125rem;
+
+  &--text {
+    max-width: 35rem;
+    display: block;
+
+    @include breakpoint($horizontal-align) {
+      max-width: 50rem;
+      display: inline-block;
+      margin: 0 $section-padding;
+    }
+
+    p ~ h1,
+    p ~ h2,
+    p ~ h3,
+    p ~ h4 {
+      &:before {
+        margin-top: 2rem;
+      }
+    }
+  }
+  &--img {
+    display: block;
+    padding-top: $aricles-section-bottom-margin / 2;
+
+    @include breakpoint($horizontal-align) {
+      display: inline-block;
+      margin: 0 $section-padding;
+    }
+
+    &-l {
+      display: block;
+      padding-top: $aricles-section-bottom-margin / 2;
+
+      @include breakpoint($horizontal-align) {
+        display: inline-block;
+        margin: 0 $section-padding;
+      }
+    }
+  }
+}

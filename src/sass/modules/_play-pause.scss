@@ -1,0 +1,20 @@
+.play-pause {
+  position: absolute;
+  bottom: 1rem; right: 1rem;
+  width: 3.75rem; height: 3.75rem;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: 1.1rem;
+  transform-origin: 50% 50%;
+
+  @include hocus {
+    outline: none;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

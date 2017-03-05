@@ -1,0 +1,172 @@
+.usp {
+  width: 100%; height: 100%;
+  max-width: 60rem;
+  display: inline-block;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--top {
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include breakpoint($align-usp-slide-content) {
+      padding-top: 5.6rem;
+    }
+    @include breakpoint(1200px) {
+      padding-left: 8rem;
+    }
+    @include breakpoint(1300px) {
+      padding-top: 4.6rem;
+
+    }
+  }
+
+  &--bottom {
+    padding-bottom: 1rem;
+
+    @include breakpoint($horizontal-align-usp-buttons) { padding-bottom: 2.6rem; }
+  }
+
+  &--numb {
+    display: inline-block;
+    margin-right: 1rem;
+    font-family: $sans-serif-bold-font;
+    @include adjust($slide-number);
+    margin-right: 2rem;
+
+    @include breakpoint(800px) {
+      margin-right: 7rem;
+    }
+  }
+  &--text {
+    display: inline-block;
+    font-family: $bold-slab-font;
+    @include adjust($header-s);
+
+    max-width: 80%;
+  }
+  &--svg {
+    position: absolute;
+    display: none;
+
+    @include breakpoint(1060px) {
+      display: block;
+      overflow: visible;
+    }
+  }
+
+  &--subtext {
+    text-align: center;
+    color: $dark-blue;
+  }
+  &--link {
+    font-family: $sans-serif-bold-font;
+  }
+
+
+  // Details for every usp slide
+  &-1 {
+    .usp--text {
+      @include breakpoint(600px) { max-width: 25rem; }
+    }
+  }
+  &-2 {
+    em {
+      display: inline-block;
+      transform: translateY(5rem);
+      font-style: normal;
+    }
+  }
+  &-3 {
+    .usp--text {
+      @include breakpoint(600px) { max-width: 14.75rem; }
+    }
+    em {
+      display: block;
+      font-style: normal;
+    }
+  }
+  &-4 {
+    .usp--text {
+      @include breakpoint(600px) { max-width: 21rem; }
+    }
+    em {
+      display: block;
+      @include adjust($header-m);
+      text-align: right;
+      float: right;
+
+      &:before {
+        content: " ";
+        display: block;
+        width: 15rem; height: .125rem;
+        background-color: $white;
+      }
+
+      @include breakpoint(1060px) {
+        transform: translateX(12rem);
+
+        &:before {
+          width: 24rem;
+        }
+      }
+    }
+  }
+  &-5 {
+    .usp--text {
+      @include breakpoint(600px) { max-width: 25rem; }
+    }
+  }
+}
+
+
+// add this style with js
+.usp-js {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  white-space: normal;
+  z-index: -1;
+}
+
+@keyframes from-right {
+  from {
+    transform: translate(-40%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes from-left {
+  from {
+    transform: translate(-60%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.from-right {
+  animation: .3s from-right;
+}
+.from-left {
+  animation: .3s from-left;
+}
+
+.show {
+  opacity: 1;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,58 @@
+.google-chart {
+  max-width: $chart-width;
+  margin: 0 -1.1rem 1.25rem -1.1rem;
+
+  @include breakpoint($marge-to-graphs) {
+    margin: 0 2rem 1.25rem 2rem;
+  }
+
+  &--chart {
+    width: 100%;
+    overflow-x: scroll;
+
+    @include breakpoint($graphs-no-scroll) {
+      overflow-x: visible;
+    }
+
+    > div {
+      width: 70%;
+      display: inline-block;
+      margin-bottom: 1rem;
+
+      > div {
+        width: 100% !important;
+      }
+    }
+  }
+
+  &--title {
+    margin-bottom: 3.4rem;
+
+    color: $dark-blue;
+    font-family: "Josefin Sans Bold";
+    @include adjust($graph-title-font-size);
+
+    &-container {
+      position: relative;
+      width: 5.8rem !important;
+      padding-left: 0.875rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      height: 320px;
+      background: $white;
+
+      vertical-align: top;
+
+      display: inline-flex !important;
+      align-items: flex-end;
+    }
+  }
+
+  svg text {
+    font-family: $sans-serif-bold-font;
+  }
+}
+
+.hide {
+  display: none;
+}

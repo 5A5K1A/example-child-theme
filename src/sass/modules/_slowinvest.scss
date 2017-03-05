@@ -1,0 +1,49 @@
+.slowinvest {
+  @include container;
+  margin-bottom: $aricles-section-bottom-margin;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+
+  @include breakpoint(800px) {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+
+  p {
+    max-width: 35.625rem;
+    text-align: center;
+    margin: 3.125rem auto;
+  }
+
+  &--img {
+    @include breakpoint(800px) {
+      margin-left: 0;
+    }
+  }
+  &--img-container {
+    width: 200%;
+    left: -100%;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint(800px) {
+        width: 100%;
+        left: 0;
+        position: inherit;
+    }
+  }
+  &--img-path path {
+    stroke-dashoffset: 500;
+
+    @-moz-document url-prefix() {
+      stroke-dashoffset: -34;
+    }
+  }
+  &--img-snail {
+    transform: translateX(-700%) translateY(62%) rotate(3deg);
+
+    @-moz-document url-prefix() {
+      transform: translateX(0%) translateY(0%) rotate(0deg);
+    }
+  }
+}

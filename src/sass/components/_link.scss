@@ -1,0 +1,52 @@
+a {
+  color: inherit;
+}
+
+.single-link {
+  position: relative;
+  display: table; // fix to set an block element to max width of link
+  margin-top: .7rem;
+  padding: 1.25rem 2.875rem 1.25rem 1.25rem;
+  border: 2px solid currentColor;
+  color: currentColor;
+
+  line-height: 1;
+  font-family: $sans-serif-bold-font;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:before {
+    display: block;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 1rem; bottom: 50%;
+    width: 1.25rem; height: 1.25rem;
+    transform: translateY(50%) rotate(45deg);
+
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+
+    transition: .3s transform;
+  }
+
+  @include hocus {
+    text-decoration: underline;
+
+    &:after {
+      // make ani of turned box with two borders
+      transform: translateY(calc(50% - .35rem)) rotate(45deg) translateX(.5rem);
+    }
+  }
+
+  &--white {
+    @extend .single-link;
+    color: white;
+  }
+  &--center {
+    @extend .single-link;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
